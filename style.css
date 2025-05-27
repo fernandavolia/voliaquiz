@@ -5,20 +5,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 20px;
+  min-height: 100vh;
 }
 
 .container {
   background: #ca89e4;
   padding: 20px;
   border-radius: 20px;
-  width: 350px;
+  width: 100%;
+  max-width: 500px; /* ocupa mais espaço na tela maior */
   text-align: center;
   color: #fff;
+  box-sizing: border-box;
+  margin: 0 20px; /* evita encostar nas bordas em telas pequenas */
 }
 
+
 .logo {
-  width: 200px;
+  width: 220px; /* Aumentado como você pediu */
+  max-width: 80%;
   margin-bottom: 10px;
 }
 
@@ -90,7 +96,7 @@ body {
 
 #quiz button {
   display: block;
-  margin: 20px auto 0 auto; /* Centraliza e dá espaçamento */
+  margin: 20px auto 0 auto;
   background: #ff3296;
   border: none;
   padding: 10px 25px;
@@ -98,4 +104,35 @@ body {
   border-radius: 25px;
   cursor: pointer;
   font-size: 14px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  #question {
+    font-size: 16px;
+  }
+
+  #answers button {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  #nextBtn,
+  #result button {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  #result p.share {
+    font-size: 11px;
+  }
 }
