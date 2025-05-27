@@ -1,12 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f1edf7; /* fundo externo ao container */
+  background: #f1edf7;
   font-family: sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Isso faz o body ocupar a tela toda */
 }
-
-
-
 
 .container {
   background: #ca89e4;
@@ -17,11 +19,7 @@ body {
   text-align: center;
   color: #fff;
   box-sizing: border-box;
-  margin: 40px auto; /* Espaço externo acima e abaixo */
 }
-
-
-
 
 .logo {
   width: 220px; /* Aumentado como você pediu */
