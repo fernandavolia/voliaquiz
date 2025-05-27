@@ -1,13 +1,11 @@
 body {
   margin: 0;
-  font-family: 'Arial Rounded MT Bold', sans-serif;
-  background: #edeaf0;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  min-height: 100vh;
-  padding: 20px 0;
+  padding: 0;
+  background: #f1edf7; /* fundo externo ao container */
+  font-family: sans-serif;
 }
+
+
 
 
 .container {
@@ -19,10 +17,10 @@ body {
   text-align: center;
   color: #fff;
   box-sizing: border-box;
-  margin: 20px;
-  flex-grow: 1;
-  height: 90vh
+  margin: 40px auto; /* Espaço externo acima e abaixo */
 }
+
+
 
 
 .logo {
