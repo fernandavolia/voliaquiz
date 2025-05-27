@@ -7,19 +7,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Isso faz o body ocupar a tela toda */
+  min-height: 100vh;
+
+  overflow-y: auto;
 }
 
+/* Container centralizado e com largura confortável */
 .container {
   background: #ca89e4;
   padding: 30px 20px;
   border-radius: 20px;
-  width: 100%;
-  max-width: 600px;
-  text-align: center;
-  color: #fff;
+
+  width: 90%;          /* pega 90% da largura da tela */
+  max-width: 600px;     /* mas não passa de 600px no desktop */
   box-sizing: border-box;
+  text-align: center;
 }
+
 
 .logo {
   width: 220px; /* Aumentado como você pediu */
