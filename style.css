@@ -4,21 +4,24 @@ body {
   background: #edeaf0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  align-items: start;
   min-height: 100vh;
+  padding: 20px 0;
 }
+
 
 .container {
   background: #ca89e4;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 20px;
   width: 100%;
-  max-width: 500px; /* ocupa mais espaço na tela maior */
+  max-width: 600px;
   text-align: center;
   color: #fff;
   box-sizing: border-box;
-  margin: 0 20px; /* evita encostar nas bordas em telas pequenas */
+  margin: 20px;
+  flex-grow: 1;
+  height: 90vh
 }
 
 
