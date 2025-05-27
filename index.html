@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Vòlia Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo Vòlia" class="logo">
+    <div class="quiz-box">
+      <img src="produtos.jpeg" alt="Imagem Vòlia" class="quiz-img">
+      <div id="quiz">
+        <h2 id="question">Carregando...</h2>
+        <div id="answers"></div>
+        <button id="nextBtn">PRÓXIMO</button>
+      </div>
+      <div id="result" class="hidden">
+        <h2 id="result-title"></h2>
+        <p id="result-score"></p>
+        <button onclick="location.reload()">RECOMEÇAR</button>
+        <p class="share">Compartilhe o seu resultado nos stories<br>e mencione @voliacosmeticos</p>
+    </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
